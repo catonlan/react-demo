@@ -4,6 +4,7 @@ import './App.css';
 import Hello from './Hello';
 import PostList from './PostList';
 import PostList2 from './PostList2';
+import PostList3 from './PostList3';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         </a>
         <PostList></PostList>
         <PostList2></PostList2>
+        <PostList3></PostList3>
       </header>
     </div>
   );
