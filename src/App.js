@@ -2,14 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello';
-import PostList from './PostList'
+import PostList from './PostList';
+import PostList2 from './PostList2';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Hello nickname="Hee"></Hello>
+        <Hello nickname="rrrr"></Hello>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,6 +23,7 @@ function App() {
           Learn React
         </a>
         <PostList></PostList>
+        <PostList2></PostList2>
       </header>
     </div>
   );
