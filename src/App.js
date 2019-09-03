@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello';
+import PostList from './PostList'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <PostList></PostList>
       </header>
     </div>
   );
