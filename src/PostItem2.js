@@ -47,34 +47,34 @@ import React,{Component} from 'react';
 //         );
 //     }
 // }
-function PostItem(props) {
+function PostItem2(props) {
     const handleClick = () => {
-        props.onVote(props.post.id);
+        if(typeof props.onVote !=="undefined"){
+            props.onVote(props.post.id);
+        }
     };
-
-    const {post} = props;
 
     return (
         <li>
             <div>
-                {post.title}
+                {props.title}
             </div>
 
              <div>
-                 创建人：<span> {post.author} </span>
+                 创建人：<span> {props.author} </span>
             </div>
 
             <div>
-                创建时间：<span> {post.date} </span>
+                创建时间：<span> {props.date} </span>
             </div>
 
             <div>
                 <button onClick={handleClick}>点赞</button>
                 &nbsp;
-                <span> {post.vote} </span>
+                <span> {props.vote} </span>
             </div>
         </li>
     );
 }
 
-export default PostItem;
+export default PostItem2;

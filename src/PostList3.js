@@ -1,13 +1,14 @@
 import React,{Component} from 'react';
-import PostItem from './PostItem';
+import PostItem3 from './PostItem3';
 
 class PostList3 extends Component {
     constructor(props){
-    this.state = {
-        posts: []
-    };
-    this.timer = null; //定时器
-    this.handleVote = this.handleVote.bind(this); //ES 6 class中， 必须手动绑定方法this的指向
+        super(props)
+        this.state = {
+            posts: []
+        };
+        this.timer = null; //定时器
+        this.handleVote = this.handleVote.bind(this); //ES 6 class中， 必须手动绑定方法this的指向
     }
     componentDidMount() {
         this.timer = setTimeout(() => {
@@ -29,7 +30,7 @@ class PostList3 extends Component {
 
     handleVote(id) {
         //根据帖子ID进行过滤，找到待修改vote属性的帖子，返回新的posts对象
-
+        console.log('id',id)
         const posts = this.state.posts.map(item => {
             const newItem =item.id === id ? {...item, vote: ++item.vote} : item;
             return newItem;
@@ -46,11 +47,12 @@ class PostList3 extends Component {
             <div>
             帖子列表：
             <ul>
-                {this.state.posts.map(item => 
+                {this.state.posts.map((item,idx) => 
                 
-                <PostItem
+                <PostItem3
                     post = {item}
                     onVote = {this.handleVote}
+                    key={idx}
                     />
                 )}
             </ul>

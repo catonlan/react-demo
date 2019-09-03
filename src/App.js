@@ -23,9 +23,15 @@ function App() {
         >
           Learn React
         </a>
+        <h4>PostList 例子</h4>
         <PostList></PostList>
+        <hr />
+        <h4>PostList2 例子</h4>
         <PostList2></PostList2>
+        <hr />
+        <h4>PostList3 例子</h4>
         <PostList3></PostList3>
+        <hr />
       </header>
     </div>
   );
