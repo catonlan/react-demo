@@ -7,6 +7,7 @@ import PostList2 from './PostList2';
 import PostList3 from './PostList3';
 import MyComponent from './MyComponent';
 import MyComponent2 from './MyConmponent2';
+import MyComponent3 from './MyComponent3';
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
         <MyComponent></MyComponent>
         <hr />
         <MyComponent2></MyComponent2>
+        <hr />
+        <MyComponent3></MyComponent3>
       </header>
     </div>
   );
