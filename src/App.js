@@ -9,6 +9,7 @@ import MyComponent from './MyComponent';
 import MyComponent2 from './MyConmponent2';
 import MyComponent3 from './MyComponent3';
 import MyComponent4 from './MyComponent4';
+import LongForm from './LongForm'
 
 function App() {
   return (
@@ -43,7 +44,13 @@ function App() {
         <MyComponent3></MyComponent3>
         <hr />
         <MyComponent4></MyComponent4>
+        <br/>
+        <hr />
+         <LongForm></LongForm>
       </header>
+      <tbody>
+        <LongForm></LongForm>
+      </tbody>
     </div>
   );
 }

@@ -4,7 +4,7 @@ class MyComponent4 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            list:[1, 2, 3, 4],
+            list:[1, 2, 3, 4, 6],
             current: 1
         };
     }
@@ -19,9 +19,13 @@ class MyComponent4 extends React.Component {
     render() {
         return (
             <ul>
-            {this.state.list.map((item) => {
-                <li></li>
-            })}
+               {this.state.list.map((item, idx) => 
+               <li key={idx} 
+               className={this.state.current === item ? 'current' : ''} 
+               onClick={this.handleClick.bind(this, item)}>
+               {item}
+               </li> 
+               )}
             </ul>
         );
     }
