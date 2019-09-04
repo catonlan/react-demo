@@ -19,9 +19,8 @@ class Adp extends React.Component {
             <div>
                 <ErrorBoundary>
                     <Profile user ={this.state.user} />
+                    <button onClick={this.onClick}>更新</button>
                 </ErrorBoundary>
-
-                <button onClick={this.onClick}>更新</button>
             </div>
         )
     }

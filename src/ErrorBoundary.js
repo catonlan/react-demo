@@ -13,7 +13,7 @@ class ErrorBoundary extends React.Component {
         this.setState({hasError: true});
 
         //同时输出错误日志
-        console.log(error, info);
+        console.log('componentDidCatch----', error, info);
     }
 
     render() {
