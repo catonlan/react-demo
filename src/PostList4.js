@@ -10,6 +10,7 @@ class PostList4 extends Component {
         this.timer = null; //定时器
         this.handleVote = this.handleVote.bind(this); //ES 6 class中， 必须手动绑定方法this的指向
     }
+
     componentDidMount() {
         this.timer = setTimeout(() => {
             this.setState({
@@ -22,6 +23,7 @@ class PostList4 extends Component {
             });
         }, 1000)
     }
+
     componentWillUnmount() {
         if(this.timer) {
             clearTimeout(this.timer); //清除定时器
@@ -62,8 +64,8 @@ class PostList4 extends Component {
                 <h2>帖子列表</h2>
 
                 <ul>
-                    {this.state.posts.map(item => 
-                        <PostItem4 key = {this.id} post = {item} onVote = {this.handleVote} onSave = {this.handleSave} />
+                    {this.state.posts.map((item,idx) => 
+                        <PostItem4 key={idx} post = {item} onVote = {this.handleVote} onSave = {this.handleSave} />
                     )}
                 </ul>
             </div>

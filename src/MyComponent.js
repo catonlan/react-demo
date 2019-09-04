@@ -8,7 +8,7 @@ class MyComponent extends React.Component {
 
     //每点击一次button， state中的number增加1
     handleClick(event) {
-        const number = ++this.state.number;
+        const number = this.state.number++;
         this.setState({
             number: number
         });
