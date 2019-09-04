@@ -6,6 +6,7 @@ import PostList from './PostList';
 import PostList2 from './PostList2';
 import PostList3 from './PostList3';
 import MyComponent from './MyComponent';
+import MyComponent2 from './MyConmponent2';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <hr />
         <MyComponent></MyComponent>
         <hr />
+        <MyComponent2></MyComponent2>
       </header>
     </div>
   );
