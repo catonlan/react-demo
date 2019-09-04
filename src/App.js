@@ -9,7 +9,8 @@ import MyComponent from './MyComponent';
 import MyComponent2 from './MyConmponent2';
 import MyComponent3 from './MyComponent3';
 import MyComponent4 from './MyComponent4';
-import LongForm from './LongForm'
+import LongForm from './LongForm';
+import SelectFrom from './SelectFrom'
 
 function App() {
   return (
@@ -47,10 +48,12 @@ function App() {
         <br/>
         <hr />
          <LongForm></LongForm>
+         <hr/>
+         <SelectFrom></SelectFrom>
       </header>
-      <tbody>
+      {/* <tbody>
         <LongForm></LongForm>
-      </tbody>
+      </tbody> */}
     </div>
   );
 }
