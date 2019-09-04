@@ -13,7 +13,7 @@ import MyComponent4 from './MyComponent4';
 import LongForm from './LongForm';
 import SelectFrom from './SelectFrom';
 import CheckFrom from './CheckFrom'
-import { isPrimitive } from 'util';
+import Adp from './Adp';
 
 function App() {
   return (
@@ -57,6 +57,8 @@ function App() {
          <CheckFrom></CheckFrom>
          <hr/>
         <PostList4></PostList4>
+        <hr/>
+        <Adp></Adp>
       </header>
       {/* <tbody>
         <LongForm></LongForm>
