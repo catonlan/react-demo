@@ -5,12 +5,15 @@ import Hello from './Hello';
 import PostList from './PostList';
 import PostList2 from './PostList2';
 import PostList3 from './PostList3';
+import PostList4 from './PostList4';
 import MyComponent from './MyComponent';
 import MyComponent2 from './MyConmponent2';
 import MyComponent3 from './MyComponent3';
 import MyComponent4 from './MyComponent4';
 import LongForm from './LongForm';
-import SelectFrom from './SelectFrom'
+import SelectFrom from './SelectFrom';
+import CheckFrom from './CheckFrom'
+import { isPrimitive } from 'util';
 
 function App() {
   return (
@@ -50,6 +53,10 @@ function App() {
          <LongForm></LongForm>
          <hr/>
          <SelectFrom></SelectFrom>
+         <hr/>
+         <CheckFrom></CheckFrom>
+         <hr/>
+        <PostList4></PostList4>
       </header>
       {/* <tbody>
         <LongForm></LongForm>
