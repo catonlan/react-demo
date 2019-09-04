@@ -33,6 +33,7 @@ class PostList4 extends Component {
     handleVote(id) {
         //根据帖子ID进行过滤，找到待修改vote属性的帖子，返回新的posts对象
         console.log('id',id)
+        console.log('postList4 handleVote-this:', this)
         const posts = this.state.posts.map(item => {
             const newItem =item.id === id ? {...item, vote: ++item.vote} : item;
             return newItem;
@@ -45,9 +46,9 @@ class PostList4 extends Component {
     }
 
     //保存帖子
-
     handleSave(post) {
         // 根据post的ID， 过滤出当前要更改新的post
+        console.log('postList4 handleSave-this:', this)
         const posts = this.state.posts.map(item => {
             const newItem = item.id === post.id ? post : item;
             return newItem;
