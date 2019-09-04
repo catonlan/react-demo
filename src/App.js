@@ -8,6 +8,7 @@ import PostList3 from './PostList3';
 import MyComponent from './MyComponent';
 import MyComponent2 from './MyConmponent2';
 import MyComponent3 from './MyComponent3';
+import MyComponent4 from './MyComponent4';
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
         <MyComponent2></MyComponent2>
         <hr />
         <MyComponent3></MyComponent3>
+        <hr />
+        <MyComponent4></MyComponent4>
       </header>
     </div>
   );
