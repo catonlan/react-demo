@@ -10,7 +10,7 @@ import MyComponent from './MyComponent';
 import MyComponent2 from './MyConmponent2';
 import MyComponent3 from './MyComponent3';
 import MyComponent4 from './MyComponent4';
-import LongForm from './LongForm';
+import LongForm from './longform';
 import SelectFrom from './SelectFrom';
 import CheckFrom from './CheckFrom'
 import Adp from './Adp';

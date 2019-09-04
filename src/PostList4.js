@@ -65,8 +65,9 @@ class PostList4 extends Component {
                 <h2>帖子列表</h2>
 
                 <ul>
+                {/** handleSave必须绑定this,否则子组件PostItem4调用时,this指向子组件,而不是父组件的this */}
                     {this.state.posts.map((item,idx) => 
-                        <PostItem4 key={idx} post = {item} onVote = {this.handleVote} onSave = {this.handleSave} />
+                        <PostItem4 key={idx} post = {item} onVote = {this.handleVote} onSave = {this.handleSave.bind(this)} />
                     )}
                 </ul>
             </div>
