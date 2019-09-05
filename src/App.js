@@ -16,6 +16,8 @@ import CheckFrom from './CheckFrom'
 import Adp from './Adp';
 import Admpp from './Admpp'
 import UserListContainer from './UserListContainer'
+import HiHeil from './Hiheil'
+import UserListContainer2 from './UserListContainer2'
 
 function App() {
   return (
@@ -64,6 +66,10 @@ function App() {
         <hr/>
         <Admpp></Admpp>
         <UserListContainer></UserListContainer>
+        <hr/>
+        <HiHeil></HiHeil>
+        <hr/>
+        <UserListContainer2></UserListContainer2>
       </header>
     </div>
   );
