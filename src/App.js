@@ -19,6 +19,7 @@ import UserListContainer from './UserListContainer'
 import HiHeil from './Hiheil'
 import UserListContainer2 from './UserListContainer2'
 import UserListContainer3 from './UserListContainer3'
+import Container from './Container'
 
 function App() {
   return (
@@ -73,6 +74,8 @@ function App() {
         <UserListContainer2></UserListContainer2>
         <hr/>
         <UserListContainer3></UserListContainer3>
+        <hr/>
+        <Container></Container>
       </header>
     </div>
   );
