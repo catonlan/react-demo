@@ -24,6 +24,7 @@ import Container from './Container'
 import Nav from './component/nav'
 import Goods from './page/goods'
 import Welcome from './page/welcome'
+import {Route} from 'react-router-dom'
 
 
 
@@ -37,23 +38,7 @@ const LIST = [
     url: '/goods'
   }
 ];
-const GOODS = [
-  {
-    name: 'iphone 7',
-    price: '6888',
-    amount: 37
-  },
-  {
-    name: 'ipad',
-    price: '3455',
-    amount: 82
-  },
-  {
-    name: 'MacBook Pro',
-    price: '11888',
-    amount: 15
-  }
-];
+
 
 function App() {
   return (
@@ -118,8 +103,8 @@ function App() {
     </div>
 
     <div className="conent">
-        <Welcome />
-        <Goods list={GOODS} />
+      <Route path='/welcome' component={Welcome} />
+      <Route path='/goods' component={Goods} />
     </div>
 
     </div>
