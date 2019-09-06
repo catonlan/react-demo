@@ -21,6 +21,40 @@ import UserListContainer2 from './UserListContainer2'
 import UserListContainer3 from './UserListContainer3'
 import Container from './Container'
 
+import Nav from './component/nav'
+import Goods from './page/goods'
+import Welcome from './page/welcome'
+
+
+
+const LIST = [
+  {
+    text:'welcome',
+    url: '/welcome'
+  },
+  {
+    text: 'goods',
+    url: '/goods'
+  }
+];
+const GOODS = [
+  {
+    name: 'iphone 7',
+    price: '6888',
+    amount: 37
+  },
+  {
+    name: 'ipad',
+    price: '3455',
+    amount: 82
+  },
+  {
+    name: 'MacBook Pro',
+    price: '11888',
+    amount: 15
+  }
+];
+
 function App() {
   return (
     <div className="App">
@@ -77,8 +111,22 @@ function App() {
         <hr/>
         <Container></Container>
       </header>
+    <br/><br/>
+    <div>
+      <div className="nav_bar">
+      <Nav list={LIST} />
+    </div>
+
+    <div className="conent">
+        <Welcome />
+        <Goods list={GOODS} />
+    </div>
+
+    </div>
     </div>
   );
+
+  
 }
 
 export default App;
