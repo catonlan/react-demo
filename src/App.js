@@ -6,6 +6,7 @@ import Parameters from './routertest/Parameters'
 import RedienTend from './routertest/Redirects'
 import CustomLink from './routertest/CustomLink'
 import Preventing from './routertest/Preventing'
+import Index from './routertest/index'
 
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
         <hr/>
         <Preventing></Preventing>
       </header>
+      <div className="my-tboy">
+        <Index></Index>
+      </div>
     </div>
   );
 }
