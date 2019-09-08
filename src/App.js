@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Example from './routertest/example'
+import Parameters from './routertest/Parameters'
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           Learn React
         </a> */}
         <Example></Example>
+        <br/>
+        <hr/>
+        <Parameters></Parameters>
       </header>
     </div>
   );
