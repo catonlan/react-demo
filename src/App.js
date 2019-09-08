@@ -4,6 +4,7 @@ import './App.css';
 import Example from './routertest/example'
 import Parameters from './routertest/Parameters'
 import RedienTend from './routertest/Redirects'
+import CustomLink from './routertest/CustomLink'
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
         <Parameters></Parameters>
         <hr/>
         <RedienTend></RedienTend>
-
+        <hr/>
+        <CustomLink></CustomLink>
       </header>
     </div>
   );
