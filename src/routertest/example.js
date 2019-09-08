@@ -49,6 +49,7 @@ function Home () {
 
 
  function Topics ({match}) {
+     console.log('topics match', match)
      return (
          <div>
              <h2>Topics</h2>
@@ -63,14 +64,15 @@ function Home () {
                  <Link to={`${match.url}/props-v-state`}>Props v.state</Link>
              </li>
              </ul>
-
              <Route path={`${match.path}/:topicId`} component={Topic} />
              <Route exact path={match.path} render={() => <h3>Please select a topic</h3> } />
+             
          </div>
      )
  }
 
  function Topic({match}) {
+     console.log('Topic match:', Topic)
      return (
         <div>
             <h3>{match.params.topicId}</h3>
