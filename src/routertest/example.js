@@ -22,8 +22,8 @@ function BasicExample(){
                 <hr/>
 
                 <Route exact path="/" component={Home} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/topics" component={Topics} />
+                <Route  path="/about" component={About} />
+                <Route  path="/topics" component={Topics} />
             </div>
         </Router>
     )

@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Example from './routertest/example'
 import Parameters from './routertest/Parameters'
+import RedienTend from './routertest/Redirects'
+
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
         <br/>
         <hr/>
         <Parameters></Parameters>
+        <hr/>
+        <RedienTend></RedienTend>
+
       </header>
     </div>
   );
