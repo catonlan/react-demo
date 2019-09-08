@@ -5,6 +5,7 @@ import Example from './routertest/example'
 import Parameters from './routertest/Parameters'
 import RedienTend from './routertest/Redirects'
 import CustomLink from './routertest/CustomLink'
+import Preventing from './routertest/Preventing'
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
         <RedienTend></RedienTend>
         <hr/>
         <CustomLink></CustomLink>
+        <hr/>
+        <Preventing></Preventing>
       </header>
     </div>
   );
